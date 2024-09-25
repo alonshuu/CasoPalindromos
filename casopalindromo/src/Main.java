@@ -1,15 +1,38 @@
+import java.util.Scanner;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+    public static boolean esPalindromo(String cadena) {
+
+        char[] caracteres = cadena.toCharArray();
+
+        StringBuilder resultado = new StringBuilder();
+        for (int i = caracteres.length - 1; i >= 0; i--) {
+            resultado.append(caracteres[i]);
+        }
+
+        return cadena.contentEquals(resultado);
+
+
+
+
+    }
+
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Introduce la palabra que deseas comprobar si es palindromo o no: ");
+
+        String input = scanner.nextLine();
+
+        if (esPalindromo(input)) {
+            System.out.println(input + "Es palindromo");
+
+        } else {
+            System.out.println(input + "No es palindromo");
         }
     }
 }
