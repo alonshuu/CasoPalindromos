@@ -38,7 +38,10 @@ R: El método obtiene como input una cadena, después de esto en el metodo se cr
 **4.0** Mejoras del codigo final:
 
 
+![image](https://github.com/user-attachments/assets/a8d0c272-3ebf-4e1c-9b6c-ab1a05eab635)
+Mas que nada se cambio la función principal, tomando en consideracion que la versión anterior no tomaba en cuenta signos o mayusculas, palabras que tuvieran mayusculas que fueran palindromas no serian tomadas como tal o que tuvieran espacios.
 
+El código mejoro todo esto y ahora funciona como deberia hacerlo. Las pruebas unitarias nos ayudaron a encontrar los errores en este caso el mayor que era de no respetar mayusculas ni espacios. 
 
 
 
