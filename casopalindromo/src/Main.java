@@ -6,16 +6,15 @@ public class Main {
 
     public static boolean esPalindromo(String cadena) {
 
-        char[] caracteres = cadena.toCharArray();
+        String procesada = cadena.replaceAll("[^a-zA-Z0-9]","").toLowerCase();
 
         StringBuilder resultado = new StringBuilder();
-        for (int i = caracteres.length - 1; i >= 0; i--) {
-            resultado.append(caracteres[i]);
+
+        for (int i = procesada.length() - 1; i >= 0; i-- ) {
+            resultado.append(procesada.charAt(i));
         }
 
-        return cadena.contentEquals(resultado);
-
-
+        return procesada.contentEquals(resultado);
 
 
     }
