@@ -27,5 +27,19 @@ R: El método obtiene como input una cadena, después de esto en el metodo se cr
 
 **2.0** Construir una versión en Java que sea 100% equivalente en funcionalidad al anterior método.
 
+![image](https://github.com/user-attachments/assets/a17255b9-3d1d-420b-a017-194b9c921427)
+
+![image](https://github.com/user-attachments/assets/d0e725b7-c963-4dec-b080-16c265d0b273)
+
+**3.0** Aplicando las pruebas unitarias:
+
+![image](https://github.com/user-attachments/assets/5e675202-bf65-45ae-b9e0-f6954cf8b4b4)
+
+**4.0** Mejoras del codigo final:
+
+
+
+
+
 
 
